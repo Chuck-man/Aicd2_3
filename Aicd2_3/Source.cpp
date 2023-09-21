@@ -75,8 +75,6 @@ public:
             _data.find(from)->second.push_back({ from, to, d });
         }
     }
-    /*bool remove_edge(const Vertex& from, const Vertex& to);
-    bool remove_edge(const Edge& e); //c учетом расстояния*/
 
     bool remove_edge(const Vertex& from, const Vertex& to) {
         if (!has_vertex(from) or !has_vertex(to)) { return false; }
